@@ -81,31 +81,42 @@
                         <h2>Membership Benefits</h2>
                         
 
-                        <p>Ut feugiat massa ut purus lobortis efficitur. Curabitur sed nisi ut nulla dapibus ultricies. Donec at ligula id justo tempor interdum eu vitae tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam in ante varius, elementum leo et, sollicitudin erat. Nulla porttitor dictum quam, at ultrices justo blandit ac. Curabitur sed sem ut erat consequat imperdiet a eget erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed id sagittis dolor. Vestibulum in faucibus tortor. Aenean nec posuere nisi, ut fermentum magna. Nullam sed feugiat erat. Duis diam tellus, finibus vitae fermentum eget, vulputate vel lacus. Nullam sollicitudin, felis sed tincidunt egestas, orci nibh feugiat sapien, imperdiet dignissim massa enim nec augue. </p>
+                        <p>Ut feugiat massa ut purus lobortis efficitur. Curabitur sed nisi ut nulla dapibus ultricies. Donec at ligula id justo tempor interdum eu vitae tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam in ante varius, elementum leo et, sollicitudin erat. Nulla porttitor dictum quam, at ultrices justo blandit ac. Curabitur sed sem ut erat consequat imperdiet a eget erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed id sagittis dolor. Vestibulum in faucibus tortor. Aenean nec posuere nisi, ut fermentum magna. Nullam sed feugiat erat. Duis diam tellus, finibus vitae fermentum eget. </p>
+
                         <h2>Check Membership Status</h2>
                         <div class="container">
-                          <form class="form-inline" role="form">
-                            <div class="form-group">
-                              <input type="email" class="form-control" id="email" placeholder="Enter email" style="border-color: rgba(82,168,236,.8);outline: 0;outline: thin dotted \20;-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);box-shadow: 0 0 8px rgba(82,168,236,.6);">
-                            </div>
-                            <button type="submit" class="btn btn-info">Check Status</button>
+                            <form class="form-inline" data-toggle="validator" role="form" >
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" data-error="Bruh, that email address is invalid" required>
+                                    <div class="help-block with-errors"></div>
+                                    <button type="submit" class="btn btn-info" id="checkmemberstatus">Check Status</button>
+                              
+                                </div>
+                            </form>
+
+                            
+                            <h2>Subscribe to our mailing list</h2>
+
+                            <form class="form-inline" data-toggle="validator" role="form">
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="mailinglistemail" placeholder="Enter your email" data-error="Bruh, that email address is invalid" required>
+                                  <div class="help-block with-errors"></div>
+                                  <button type="submitsubscribe" class="btn btn-info">Subscribe</button>
+                                </div>
                           </form>
+
                         </div>
 
-                        <h2>Subscribe to mailing list</h2>
-                        <div class="container">
-                          <form class="form-inline" role="form">
-                            <div class="form-group">
-                              <input type="email" class="form-control" id="mailinglistemail" placeholder="Enter email" style="border-color: rgba(82,168,236,.8);outline: 0;outline: thin dotted \20;-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);box-shadow: 0 0 8px rgba(82,168,236,.6);">
-                            </div>
-                            <button type="submit" class="btn btn-info">Subscribe</button>
-                          </form>
-                        </div>
-
-                        
                     </div>
 
-                </div><!-- Announcement 1-->
+                </div> <!-- Membership Benefits-->
+
+
+
+               
+
+
+
 
                 <div class="col-sm-6 wow fadeInDown">
                     <h2>Donation and Membership Dues online</h2>
@@ -159,6 +170,37 @@
                         }(document, 'script', 'facebook-jssdk'));</script>
                 </div>
 
+
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="skill">
+                        <h2>Resources and Useful Links</h2>
+
+                        <a href="www.akkaonline.org">AKKA (Association of Kannada Kootas of America)</a><br>
+                        <a href="www.navika.org">NAVIKA (North America Vishwa Kannada Association)</a><br>
+                        <a href="www.kannadakoota.com">LIST of Kannada Kootas of America</a><br>
+                        <a href="www.iantn.org">IAN (Indian Association of Nashville)</a><br>
+                        <a href="ourfiam.wordpress.org">FIAM (Friends of India Association of Murfreesboro)</a><br>
+                        <a href="http://www.karunadu.gov.in">Official Website of Government of Karnataka</a><br>
+                        <a href="www.kamat.com">Kamath's Potpourri</a><br>
+
+                        
+                    </div>
+
+                </div><!-- Announcement 1-->
+
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="skill">
+                        <h2>Resources and Useful Links</h2>
+
+                        <a href="http://kannada.panchangam.org/index.php?month=01-2015">Kannada Panchanga</a><br>
+                        <a href="http://www.vijaykarnatakaepaper.com">Vijay Karnataka Kannada News Paper</a><br>
+                        <a href="http://vishvakannada.com">Vishwa Kannada - One Kannada website</a><br>
+                        
+
+                        
+                    </div>
+
+                </div><!-- Announcement 1-->
 
                 
 
@@ -294,9 +336,10 @@
                 <div class="col-sm-6">
                     <ul class="pull-right">
                         <li><a href="nkk_index.html">Home</a></li>
-                        <li><a href="nkk_about-us.html">About Us</a></li>
-                        <li><a href="currentevents.html">Events</a></li>
                         <li><a href="nkk_membership.html">Membership</a></li>
+                        <li><a href="currentevents.html">Events</a></li>
+                        <li><a href="nkk_about-us.html">About Us</a></li>
+                        <li><a href="nkk_committee.html">Committee</a></li>
                         <li><a href="nkk_contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -314,5 +357,6 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/validator.js"></script>
 </body>
 </html>
