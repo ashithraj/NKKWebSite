@@ -737,6 +737,45 @@
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/validator.js"></script>
+    <script src="js/filereader.js"></script>
+    <script type="text/javascript">
+
+
+        ////////////////////////////////////////////////////////////////
+        // Status Check
+        ////////////////////////////////////////////////////////////////
+        $('#checkmemberstatus').on("click", function(e) {
+
+            var memberemail = $('#email').val();
+
+            var fileURL = "data/membershipstatus.txt";
+            var memberstatus = "paid";  // paid, due, new-member
+
+            $.ajax({
+                url: fileURL,
+                dataType: 'json',
+                //async: false,
+                success: function (data) {
+
+                    $.each(data, function(email, val) {
+                        // console.log(i);
+                        // console.log(val);
+
+                        if (memberemail == email) {
+                            if (val == 0) {
+                                memberstatus = "due";
+                                // Set the error message in the UI
+
+                            }
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+
+
 
 
 </body>
